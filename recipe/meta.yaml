@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/DataCanvasIO/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 67462850a8754d332b7dcacdbc06274228af6694387d0dd22286339e3ef0934f
+  sha256: ea85e68bc577ade23ef3f1fcd096d6795362afb9a0561a507fbccaaaba8578c5
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - hypergbm = hypergbm.utils.tool:main
