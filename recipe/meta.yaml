@@ -1,5 +1,5 @@
 {% set name = "HyperGBM" %}
-{% set version = "0.2.5.3" %}
+{% set version = "0.2.5.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/DataCanvasIO/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: f3843d545ecd909ead37cceb99dc1d7240e201f08ab3f7509cfe2419465a1f71
+  sha256: 2ee900bfc77485c3e90a27e55e5e1775b79096d31870425fa7b2f9e908f14ba1
 
 build:
   noarch: python
