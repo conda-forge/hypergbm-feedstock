@@ -1,5 +1,5 @@
 {% set name = "HyperGBM" %}
-{% set version = "0.2.5.6" %}
+{% set version = "0.2.5.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,8 +7,8 @@ package:
 
 source:
   url: https://github.com/DataCanvasIO/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 7f1d1fe280d6c5ee9662c4e020ee33b538660c44bcf7097967d84fa0998a70a0
-
+  sha256: 593eff6bb7ade633e07b967d138d12a77a0e7f7fb9a16dcc6277919b292be1e3
+  
 build:
   noarch: python
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - hypernets >=0.2.5.6, <0.2.6
+    - hypernets >=0.2.5.7, <0.2.6
     - numpy >=1.16.5
     - pandas >=0.25.3
     - scikit-learn >=0.22.1
