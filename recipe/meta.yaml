@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - hypernets >=0.3.0, <0.4.0
+    - hypernets >=0.3.2, <0.4.0
     - numpy >=1.16.5
     - pandas >=0.25.3
     - scikit-learn >=0.22.1
