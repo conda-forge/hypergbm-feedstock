@@ -11,17 +11,17 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - hypergbm = hypergbm.utils.tool:main
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - hypernets >=0.3.2, <0.4.0
     - numpy >=1.16.5
     - pandas >=0.25.3
@@ -45,6 +45,7 @@ test:
     - hypergbm
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check  # [not win]
     - hypergbm --help  # [not win]
